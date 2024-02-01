@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+    text-decoration: none;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: #1c1c1c;
+	font-size: 15px;
+	line-height: 1.5;
+	text-decoration: none;
+    
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	color: #fff;
+	padding: 20px 0;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav .menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav .menu a {
+	padding-right: 30px;
+	font-size: 18px;
+}
+
+/*Global*/
+.container {
+	width: 90%;
+	max-width: 1150px;
+	margin: auto;
+    text-decoration: none;
+}
+
+h2{
+	font-size: 30px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color:aqua;
+}
+
+/*Header schowcase*/
+.header {
+	width: 100%;
+	height: 400px;
+	background: url('hero.jpg') no-repeat center center/cover;
+	margin-bottom: 30px;
+}
+
+/*Hero-content*/
+.content {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: flex-end;
+	margin-top: 30px;
+}
+.title{
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    transform: translate(525px,-100px);
+    font-size: 20px;
+	padding-bottom: 30px;
+}
+.content1{
+    display: inline-block;
+    width: 100%;
+    height: 300px;
+    margin: 10px;
+	text-decoration: none;
+}
+
+
+.mark{
+    transform: translate(0px,-50px);
+}
+.one,.two,.three,.four,.five,.six,.seven,.eight,.nine,.ten{
+    width:225px;
+    height:250px;
+    display: inline-block;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.sub1,.sub2,.sub3,.sub4,.sub5,.sub6,.sub7,.sub8,.sub9,.sub10{
+    padding-top: 230px;
+    padding-left:130px;
+
+}
+.pizza,.cake,.burger,.biryani,.chicken,.thali,.rolls,.momos,.chowmein,.paneer,.dosa
+{
+    border:hidden;
+    border-radius:100px;
+    position:absolute;
+    display:inline-block;
+    width:200px;
+    height:200px;
+    background-repeat:no-repeat;
+    background-size:cover;  
+    margin-left: 50px;
+}
+.pizza{
+    background-image: url(pizzza.jpeg);
+}
+.cake{
+    background-image: url(cake.jpg);
+}
+.burger{
+    background-image: url(burger.jpg);
+}
+.biryani{
+    background-image: url(biryani.jpg);
+}
+.chicken{
+    background-image: url(chicken.jpg);
+}
+.thali{
+    background-image: url(thali.jpeg);
+}
+.rolls{
+    background-image: url(rolls.jpg);
+}
+.momos{
+    background-image: url(momos.jpg);
+}
+.paneer{
+    background-image: url(paneer.jpg);
+}
+.dosa{
+    background-image: url(dosa.jpg);
+}
+.chowmein{
+    background-image: url(chowmein.jpg);
+}
+
+.KFC,.BurgerKing,.Anand,.Samosa,.FreshMenu, .Pakashala
+{
+    border:hidden;
+    border-radius:100px;
+    position:absolute;
+    display:inline-block;
+    width:200px;
+    height:200px;
+    background-repeat:no-repeat;
+    background-size:cover;  
+    margin-left: 50px;
+}
+.KFC{
+    background-image: url(kfc.jpg);
+}
+.BurgerKing{
+    background-image: url(burger1.jpg);
+}
+.Anand{
+    background-image: url(Anand.jpg);
+}
+.Samosa{
+    background-image: url(Samosa.jpg);
+}
+.FreshMenu{
+    background-image: url(f.jpg);
+}
+.Pakashala{
+    background-image: url(Pakashala.jpg);
+}
+
+
+
+
+
+
+
+
+
+/*Order category*/
+.order-cat {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 10px;
+	margin-bottom: 50px;
+}
+
+.order-cat .hover{
+	position: relative;
+	cursor: pointer;
+	transition: transform 0.3s;
+}
+
+.order-cat .hover:hover {
+	transform: scale(1.05);
+}
+
+.order-cat img {
+	width: 100%;
+	border-radius: 12px;
+}
+
+.order-cat .order-title-bg {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 10px 0 16px;
+	background-color: #fff;
+	width: 100%;
+	border: 1px solid #e8e8e8;
+	border-radius: 0 0 12px 12px;
+	font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+.order-cat .order-title {
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.collections p{
+	font-size: 30px;
+	color: red;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.collections .fa-caret-right{
+	margin-left: 10px;
+}
+
+.collection-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 10px;
+	margin-bottom: 100px;
+}
+
+.collection-grid .collection-box {
+	position: relative;
+}
+
+.collection-grid .collection-box img {
+	width: 100%;
+	border-radius: 8px;
+	height: 100%;
+}
+
+.collection-grid .collection-box .collection-title {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 10px 15px;
+}
+
+.collection-grid .collection-box .collection-title h3 {
+	font-weight: 500;
+	color: #fff;
+}
+
+.collection-grid .collection-box .collection-title p {
+	color: #fff;
+}
+
+/*Localities*/
+h1.local-title {
+	color:black;
+	font-size: 36px;
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 30px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	
+}
+
+.locals-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 20px;
+	row-gap: 35px;
+    
+}
+
+.locals-grid .local-box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+	font-size: 20px;
+	color: #1c1c1c;
+	border: 1px solid #e8e8e8;
+	border-radius: 8px;
+	box-shadow: 0 1.4px 2.8px rgba(28,28,28,0.08);
+	cursor: pointer; 
+    
+}
+
+.locals-grid .local-box:hover {
+	box-shadow: 0 1.4px 2.8px 2px rgba(28,28,28,0.08);
+ 
+}
+
+.local-box .fa-chevron-right {
+	font-size: 10px;
+  
+}
+
+/*Get zomato app*/
+.zom-app {
+	background-color: #FFFBF7;
+	margin: 100px auto;
+	padding-top: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.zom-app img {
+	height: 450px;
+}
+
+.zom-app .zom-app-right {
+	margin-left: 50px;
+	width: 450px;
+}
+
+.zom-app .zom-app-right h1{
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+
+.zom-app .zom-app-right p{
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.zom-app-right .radio-btn {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 50%;
+	padding-right: 50px;
+	margin-bottom: 20px;
+}
+
+.zom-app-right .radio-btn input[type="radio"] {
+	transform: scale(1.5);
+	margin-right: 10px;
+}
+
+.zom-app-right .email-phone {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.zom-app-right input[type="text"] {
+	padding: 13px 12px;
+	border-radius: 8px;
+	border: 1px solid #cfcfcf;
+	margin-right: 10px;
+}
+
+.zom-app-right a.btn-share {
+	color: #fff;
+	background-color: #ed5a6b;
+	border-radius: 8px;
+	padding: 13px 12px;
+	text-decoration: none;
+}
+
+.zom-app-right a.btn-share:hover {
+	background-color: #ec4654;
+}
+
+.zom-app-right .app-store {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.zom-app-right p.small-text {
+	color: #9c9c9c;
+	margin-top: 20px;
+}
+
+.zom-app-right .app-store .app-image {
+	margin-right: 20px;
+}
+
+.zom-app-right .app-store img {
+	width: 137px;
+	height: 40px;
+}
+
+/*Footer bar*/
+.footer-bar {
+	background-color: #F8F8F8;
+	padding-top: 50px;
+}
+
+.footer-bar .footer-lang {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.footer-bar .footer-last-links {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+.footer-bar .footer-last-links ul li{
+	list-style: none;
+	margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+

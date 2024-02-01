@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Zomato Login</title>
+</head>
+<style>
+  body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-decoration: none;
+}
+.Container {
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+.Container h2 {
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.form1 select,
+.form1 input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+
+.form1 button {
+  background-color: #e44d26;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+</style>
+<body>
+  <div class="Container">
+    <h2>Login IN</h2>
+    <form class="form1">
+      <label for="Type">Select login type</label>
+      <select name="Type" id="Type">
+        <option value="email">Email</option>
+        <option value="phone">Phone Number</option>
+      </select>
+      <div id="emailLogin" class="login-option">
+        <input type="email" name="email" placeholder="Email " required>
+      </div>
+      <div id="phoneLogin" class="login-option" style="display: none;">
+        <input type="tel" name="phoneNumber" placeholder="Phone Number" required>
+      </div>
+      <input type="password" name="password" placeholder="Password" required>
+      
+      <a href="https://www.zomato.com/">
+      <button>submit</button></a>
+      
+    </form>
+  </div>
+
+ 
+</body>
+</html>
+
